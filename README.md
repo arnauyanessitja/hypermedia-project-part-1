@@ -12,10 +12,10 @@ Hypermedia project, part 1. A single-page, static CV website built with plain **
 ### User profile (user persona)
 
 **Role:** Talent acquisition specialist (recruiter) at a tech company in the Girona area, looking for interns and junior profiles.  
-**Goals:** Quickly decide if the candidate fits an **internship or junior** role; check what he studies and in which year; see his **work experience**; verify **languages** and **technical skills** (C++, Java, Python, HTML, CSS, JavaScript); find the **contact** details instantly.  
-**Needs:** Very limited time per candidate, so she expects a **clear structure**, content that is easy to skim, and links that work.  
+**Goals:** Quickly decide if the candidate fits an internship or junior role; check what he studies and in which year; see his work experience; verify languages and technical skills (C++, Java, Python, HTML, CSS, JavaScript); find the contact details instantly.  
+**Needs:** Very limited time per candidate, so she expects a clear structure, content that is easy to skim, and links that work.  
 **Devices:** Mostly desktop/laptop; sometimes mobile.  
-**Expectations:** A fast and professional page, with obvious sections (**About me**, **Experience**, **Education**, **Skills**, **Contact**), simple navigation and readable typography. Since most candidates are students with little experience, she also looks for signals such as responsibility, teamwork and languages.
+**Expectations:** A fast and professional page, with obvious sections (About me, Experience, Education, Skills, Contact), simple navigation and readable typography. Since most candidates are students with little experience, she also looks for signals such as responsibility, teamwork and languages.
 
 ---
 
