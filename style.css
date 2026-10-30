@@ -1,0 +1,316 @@
+/* =========================================================
+   CV website · Arnau Yanes Sitjà · Hypermedia (UdG)
+   Index:
+   1. Variables (colors)
+   2. General styles
+   3. Header and navigation menu
+   4. Sections
+   5. Home (hero) and buttons
+   6. Photo (home section)
+   7. Experience and education items
+   8. Skills and languages table
+   9. Footer
+   10. Responsive (small screens)
+   ========================================================= */
+
+
+/* ---------- 1. VARIABLES ---------- */
+:root {
+    --blue: #1F4A7A;        /* main blue (same as my paper CV) */
+    --blue-dark: #15355A;   /* darker blue for hover */
+    --blue-light: #E4ECF5;  /* light blue for alternate sections */
+    --text: #1B2430;        /* main text */
+    --muted: #5C6B7C;       /* secondary text (dates, places) */
+    --border: #CBD6E2;      /* lines and borders */
+    --bg: #F6F8FB;          /* page background */
+    --white: #FFFFFF;
+}
+
+
+/* ---------- 2. GENERAL STYLES ---------- */
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--blue-dark);
+}
+
+/* Centered container used in every section */
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ---------- 3. HEADER AND NAVIGATION MENU ---------- */
+.site-header {
+    position: sticky;          /* the menu stays at the top while scrolling */
+    top: 0;
+    background-color: var(--blue);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.brand {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav a:hover,
+.brand:hover {
+    color: var(--blue-light);
+    text-decoration: underline;
+}
+
+
+/* ---------- 4. SECTIONS ---------- */
+.section {
+    padding: 50px 0;
+    scroll-margin-top: 60px;   /* so the sticky menu doesn't cover the title when clicking a link */
+}
+
+/* Every second section has a light blue background */
+.section.alt {
+    background-color: var(--blue-light);
+}
+
+h2 {
+    font-size: 26px;
+    color: var(--blue);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 24px 0 10px 0;
+}
+
+
+/* ---------- 5. HOME (HERO) AND BUTTONS ---------- */
+.hero {
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 44px;
+    color: var(--blue);
+    margin: 0 0 12px 0;
+}
+
+.lead {
+    font-size: 19px;
+    color: var(--muted);
+    max-width: 600px;
+    margin: 0 0 28px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--blue);
+    border-radius: 6px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--blue-dark);
+    border-color: var(--blue-dark);
+    color: var(--white);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--blue);
+}
+
+.btn-outline:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
+/* ---------- 6. PHOTO (two columns in the home section) ---------- */
+/* Two columns: text and photo */
+.two-col {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.photo {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+    justify-self: end;
+}
+
+
+/* ---------- 7. EXPERIENCE AND EDUCATION ITEMS ---------- */
+.item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item h3 {
+    margin: 0 0 4px 0;
+}
+
+.item p {
+    margin: 0;
+}
+
+/* Name of the place in blue, next to the title */
+.emph {
+    color: var(--blue);
+}
+
+/* Bullet list inside an experience item */
+.item ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+
+/* ---------- 8. SKILLS AND LANGUAGES TABLE ---------- */
+/* Skills shown as small boxes ("chips") in a row */
+.chips {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chips li {
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.languages {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: var(--white);
+}
+
+.languages th,
+.languages td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.languages th {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
+/* ---------- 9. FOOTER ---------- */
+.site-footer {
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ---------- 10. RESPONSIVE (SMALL SCREENS) ---------- */
+@media only screen and (max-width: 800px) {
+    /* The menu goes below the name and can use two lines */
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 4px 16px;
+        margin-top: 6px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    /* One column instead of two: the photo goes above the name */
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        grid-row: 1;
+        justify-self: start;
+        width: 140px;
+    }
+
+    /* Smaller table so it fits on a phone */
+    .languages th,
+    .languages td {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+}
