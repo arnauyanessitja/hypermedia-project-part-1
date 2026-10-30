@@ -9,7 +9,7 @@ Hypermedia project, part 1. A single-page, static CV website built with plain **
 
 ## 1) Project analysis
 
-### User profile (user persona)
+### User profile
 
 **Role:** Talent acquisition specialist (recruiter) at a tech company in the Girona area, looking for interns and junior profiles.  
 **Goals:** Quickly decide if the candidate fits an internship or junior role; check what he studies and in which year; see his work experience; verify languages and technical skills (C++, Java, Python, HTML, CSS, JavaScript); find the contact details instantly.  
