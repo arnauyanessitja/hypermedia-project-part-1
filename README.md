@@ -23,7 +23,7 @@ Hypermedia project, part 1. A single-page, static CV website built with plain **
 
 The website is a single-page project, so the information architecture is mainly about the order of the sections and how the user moves between them. The page uses semantic HTML5 elements: a `<header>` with the navigation menu, a `<main>` with all the CV sections, and a `<footer>`.
 
-The **header** is sticky, so it stays at the top of the screen while the user scrolls. On the left it shows my name, and on the right a menu with five links: About me, Experience, Education, Skills and Contact. Each link points to the `id` of a section (`#experience`, `#skills`...), so the recruiter can jump directly to what she wants to check without scrolling through the whole page.
+The **header** is sticky, so it stays at the top of the screen while the user scrolls. On the left it shows my name, and on the right a menu with five links: About me, Experience, Education, Skills and Contact. Each link points to the `id` of a section (`#experience`, `#skills`...), so the recruiter can jump directly to what he wants to check without scrolling through the whole page.
 
 The **main** area follows the order of a traditional CV, ranked by importance for a recruiter:
 
