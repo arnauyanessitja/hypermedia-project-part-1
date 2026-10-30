@@ -1,22 +1,11 @@
 /* =========================================================
    CV website · Arnau Yanes Sitjà · Hypermedia (UdG)
-   Index:
-   1. Variables (colors)
-   2. General styles
-   3. Header and navigation menu
-   4. Sections
-   5. Home (hero) and buttons
-   6. Photo (home section)
-   7. Experience and education items
-   8. Skills and languages table
-   9. Footer
-   10. Responsive (small screens)
    ========================================================= */
 
 
 /* ---------- 1. VARIABLES ---------- */
 :root {
-    --blue: #1F4A7A;        /* main blue (same as my paper CV) */
+    --blue: #1F4A7A;        /* main blue  */
     --blue-dark: #15355A;   /* darker blue for hover */
     --blue-light: #E4ECF5;  /* light blue for alternate sections */
     --text: #1B2430;        /* main text */
@@ -225,7 +214,7 @@ h3 {
 
 
 /* ---------- 8. SKILLS AND LANGUAGES TABLE ---------- */
-/* Skills shown as small boxes ("chips") in a row */
+/* Skills shown as small boxes in a row */
 .chips {
     list-style-type: none;
     margin: 0;
