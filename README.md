@@ -3,7 +3,7 @@
 Hypermedia project, part 1. A single-page, static CV website built with plain **HTML + CSS**.
 
 - **Live page (GitHub Pages):** https://arnauyanessitja.github.io/hypermedia-project-part-1/
-- **Figma design (proposal):** _[add the Figma link here]_
+- **Figma design (proposal):** https://www.figma.com/design/NNWYJHImvMexvQFxjEY85B/Hypermedia-Project-Part-1---Arnau-Yanes?node-id=1-2&t=ctxPkomvi28h3xLr-1
 
 ---
 
@@ -11,23 +11,11 @@ Hypermedia project, part 1. A single-page, static CV website built with plain **
 
 ### User profile (user persona)
 
-**Name:** Marta Puig, 36, Girona  
-**Role:** Talent acquisition specialist at a software and engineering company in the Girona area  
-**Background:** Degree in Psychology, master's in Human Resources. She's comfortable with LinkedIn, recruiting platforms and Office, but she isn't a programmer.  
-**Quote:** "I have two minutes per candidate. Show me what you've done and how to reach you."
-
-**Context:** Marta reviews dozens of applications every week for internships and junior positions. She usually opens candidate links on her laptop at the office, but she also checks them on her phone between interviews. Most of the profiles she sees are university students with little professional experience, so she looks for signals beyond the list of jobs: responsibility, languages, teamwork and initiative.
-
-**Goals:**
-- Find out in a few seconds who the candidate is, what he studies and in which year.
-- Check work experience and how recent it is.
-- Verify languages (English is a requirement in her company) and technical skills.
-- See real work, such as a GitHub profile or academic projects.
-- Contact the candidate quickly.
-
-**Frustrations:** long CVs where the key information is hidden; websites that are slow, flashy or hard to read on a phone; skills listed with no indication of level; contact details that are missing or hard to find.
-
-**What she expects to find:** a clear, professional page that she can scan quickly, with the same information as a paper CV plus a link to GitHub.
+**Role:** Talent acquisition specialist (recruiter) at a tech company in the Girona area, looking for interns and junior profiles.  
+**Goals:** Quickly decide if the candidate fits an **internship or junior** role; check what he studies and in which year; see his **work experience**; verify **languages** and **technical skills** (C++, Java, Python, HTML, CSS, JavaScript); find the **contact** details instantly.  
+**Needs:** Very limited time per candidate, so she expects a **clear structure**, content that is easy to skim, and links that work.  
+**Devices:** Mostly desktop/laptop; sometimes mobile.  
+**Expectations:** A fast and professional page, with obvious sections (**About me**, **Experience**, **Education**, **Skills**, **Contact**), simple navigation and readable typography. Since most candidates are students with little experience, she also looks for signals such as responsibility, teamwork and languages.
 
 ---
 
@@ -35,7 +23,7 @@ Hypermedia project, part 1. A single-page, static CV website built with plain **
 
 The website is a single-page project, so the information architecture is mainly about the order of the sections and how the user moves between them. The page uses semantic HTML5 elements: a `<header>` with the navigation menu, a `<main>` with all the CV sections, and a `<footer>`.
 
-The **header** is sticky, so it stays at the top of the screen while the user scrolls. On the left it shows my name, and on the right a menu with five links: About me, Experience, Education, Skills and Contact. Each link points to the `id` of a section (`#experience`, `#skills`...), so a recruiter like Marta can jump directly to what she wants to check without scrolling through the whole page.
+The **header** is sticky, so it stays at the top of the screen while the user scrolls. On the left it shows my name, and on the right a menu with five links: About me, Experience, Education, Skills and Contact. Each link points to the `id` of a section (`#experience`, `#skills`...), so the recruiter can jump directly to what she wants to check without scrolling through the whole page.
 
 The **main** area follows the order of a traditional CV, ranked by importance for a recruiter:
 
@@ -66,10 +54,10 @@ I wanted a simple, clean and professional design, so that the content is the pro
 
 ## 2) Design proposal using Figma
 
-- **Frames:** desktop (1440 px) and mobile (390 px).
+- **Frames:** desktop (1440 px).
 - **Components:** header with menu, home (name, summary, buttons and photo), about me, experience block with bullet list, education item, skill tags, language table, contact, footer.
 - **Styles:** the same color variables and typefaces described in the visual design section.
-- **Link:** _[add the Figma link here]_
+- **Link:** https://www.figma.com/design/NNWYJHImvMexvQFxjEY85B/Hypermedia-Project-Part-1---Arnau-Yanes?node-id=1-2&t=ctxPkomvi28h3xLr-1
 
 ---
 
